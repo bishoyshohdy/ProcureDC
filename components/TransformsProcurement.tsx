@@ -22,7 +22,7 @@ export default function TransformsProcurement() {
       }`}
       aria-label="Transforms Procurement Section"
     >
-      <div className="container mx-auto">
+      <div className="mx-auto">
         <h1
           className={`max-w-full sm:max-w-2/3 text-left
     text-[10vw] sm:text-5xl md:text-4xl lg:text-6xl 
@@ -38,11 +38,11 @@ export default function TransformsProcurement() {
         </p>
 
         <div className="flex justify-center">
-          <div className="w-full md:w-4/5 lg:w-7/8 relative">
+          <div className="w-full md:w-full lg:w-w-full relative">
             {showVideo ? (
               <div className="relative aspect-w-16 aspect-h-9">
                 <iframe
-                  src="https://www.youtube.com/embed/tFesMj3sYfA?si=ZM22c4NFjQpD-Ziz"
+                  src=""
                   title="ProcureDC Platform Overview"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
@@ -57,7 +57,7 @@ export default function TransformsProcurement() {
                 <Image
                   src={VideoImage}
                   alt="Video Thumbnail"
-                  className="rounded-2xl shadow-lg w-full h-120"
+                  className="rounded-2xl shadow-lg w-full md:h-[500px] lg:h-[720px]"
                   priority
                 />
                 <div className="absolute inset-0 flex items-center justify-center">

@@ -17,19 +17,19 @@ export default function WhoWeAre() {
       aria-label="Who We Are Section"
     >
       <h1
-        className={`text-xl md:text-2xl font-bold p-3 mb-8 inline-block rounded-lg ${
+        className={`text-xl md:text-2xl font-extrabold p-3 mb-8 inline-block rounded-lg ${
           theme === "light"
-            ? "bg-sky-200 text-[#143AA2]"
+            ? "bg-[#D1E5FA] text-[#3E8DE3]"
             : "bg-[#3E8DE3] text-white"
         }`}
       >
-        Who We Are
+        WHO WE ARE
       </h1>
-      <div className="container mx-auto">
+      <div className="mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="md:w-1/2 text-center md:text-left">
             <h1
-              className={`text-4xl md:text-5xl lg:text-6xl font-bold leading-tight ${
+              className={`text-4xl md:text-5xl lg:text-6xl font-black leading-tight ${
                 theme === "light" ? "text-[#143AA2]" : "text-[#3E8DE3]"
               }`}
               style={{ fontFamily: "Inter, sans-serif" }}

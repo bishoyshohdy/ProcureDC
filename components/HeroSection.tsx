@@ -7,7 +7,7 @@ import HeroImage1 from "@/public/img/HeroImage1.png";
 import HeroImage2 from "@/public/img/HeroImage2.png";
 import HeroImage3 from "@/public/img/HeroImage3.png";
 import { FaMapMarkerAlt } from "react-icons/fa";
-import BgImage from "@/public/img/HeroBg.jpeg";
+import BgImage from "@/public/img/HeroBg.png";
 import React, { ReactNode } from "react";
 
 type DataItem = {
@@ -47,21 +47,17 @@ export default function HeroSection() {
 
   return (
     <section
-      className={`relative py-16 px-6 md:px-20 ${
-        theme === "light" ? "text-[#4B5563]" : "text-gray-300"
-      }`}
+      className={`relative py-16 px-6 md:px-20 
+        ${theme === "light" ? "text-[#4B5563]" : "text-gray-300"}`
+      }
     >
       <div
-        className={`absolute inset-0 bg-cover bg-center opacity-90 filter ${
-          theme === "light"
-            ? "hue-rotate-180 saturate-150"
-            : "hue-rotate-0 saturate-100"
-        }`}
+        className={`absolute inset-0 bg-cover bg-center opacity-90 filter`}
         style={{ backgroundImage: `url(${BgImage.src})` }}
       />
 
       <div className="relative text-center max-w-3xl z-10">
-        <h1 className="text-4xl md:text-5xl lg:text-7xl text-left leading-tight font-bold font-inter text-white">
+        <h1 className="text-4xl md:text-5xl lg:text-7xl text-left leading-tight font-black font-inter text-white">
           Your One-Stop Platform for Data Center Procurement
         </h1>
 
@@ -72,26 +68,26 @@ export default function HeroSection() {
 
         <div className="flex justify-start space-x-4 mt-8">
           <Link
-            href="/get-started"
+            href="/Find-Suppliers"
             className={`px-8 py-3 rounded-lg font-semibold transition ${
               theme === "light"
                 ? "bg-white text-[#143AA2] border border-[#143AA2] hover:bg-[#143AA2] hover:text-white"
                 : "bg-[#3E8DE3] text-white border border-[#3E8DE3] hover:bg-[#143AA2] hover:text-white"
             }`}
-            aria-label="Get Started"
+            aria-label="Find Suppliers"
           >
-            Get Started
+            Find Suppliers
           </Link>
           <Link
-            href="/learn-more"
+            href="/Join-as-Supplier"
             className={`px-8 py-3 rounded-lg font-semibold transition ${
               theme === "light"
                 ? "bg-opacity-30 text-white border border-white hover:bg-[#143AA2] hover:text-white"
                 : "bg-opacity-30 text-white border border-white hover:bg-[#3E8DE3] hover:text-white"
             }`}
-            aria-label="Learn More"
+            aria-label="Join as Supplier"
           >
-            Learn More
+            Join as Supplier
           </Link>
         </div>
       </div>
@@ -117,7 +113,7 @@ export default function HeroSection() {
                   alt={item.title}
                   width={64}
                   height={64}
-                  quality={75} 
+                  quality={75}
                   sizes="(max-width: 768px) 50vw, (max-width: 1200px) 25vw, 10vw"
                   priority
                   className="mb-4"

@@ -46,11 +46,11 @@ export default function DataCenterSuppliers() {
       }`}
       aria-label="Data Center Suppliers Section"
     >
-      <div className="container mx-auto">
+      <div className="mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between mb-12">
           <div className="text-center md:text-left">
             <h2
-              className={`text-4xl md:text-5xl lg:text-6xl text-left leading-tight font-bold font-inter ${
+              className={`text-4xl md:text-5xl lg:text-6xl text-left leading-tight font-black font-inter ${
                 theme === "light" ? "text-black" : "text-[#3E8DE3]"
               }`}
             >
@@ -83,11 +83,12 @@ export default function DataCenterSuppliers() {
               <button
                 key={index}
                 onClick={() => setActiveTab(index)}
-                className={`w-full font-inter font-semibold text-left p-8.5 rounded-lg mb-2 transition ${
+                className={`w-full font-inter font-semibold text-left p-8.5 rounded-lg mb-2 text-xl transition duration-300 ease-in-out 
+                   ${
                   activeTab === index
                     ? theme === "light"
-                      ? "bg-gradient-to-r from-[#143AA2] to-[#3E8DE3] text-white rounded-tl-3xl rounded-bl-none md:ml-8"
-                      : "bg-[#3E8DE3] text-white rounded-tl-3xl rounded-bl-none md:ml-8"
+                      ? "bg-gradient-to-r from-[#143AA2] to-[#3E8DE3] text-white rounded-tl-3xl rounded-bl-none"
+                      : "bg-[#3E8DE3] text-white rounded-tl-3xl rounded-bl-none"
                     : theme === "light"
                     ? "bg-gray-100 text-[#143AA2] hover:bg-gray-200"
                     : "bg-[#2D3748] hover:bg-[#4A5568]"

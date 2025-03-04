@@ -53,9 +53,9 @@ export default function WhatOurClientsSay() {
           : "bg-[#1F2937] text-gray-300"
       }`}
     >
-      <div className="container">
+      <div className="">
         <h2
-          className={`text-4xl md:text-5xl lg:text-6xl text-left leading-tight font-bold font-inter ${
+          className={`text-4xl md:text-5xl lg:text-6xl text-left leading-tight font-black mb-12 font-inter ${
             theme === "light" ? "text-black" : "text-[#3E8DE3]"
           }`}
         >

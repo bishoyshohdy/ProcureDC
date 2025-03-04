@@ -25,21 +25,21 @@ export default function EmpowerGrowthSection() {
       </div>
 
       <div
-        className={`relative z-10 mx-auto w-full max-w-[85vw] p-6 md:p-8 rounded-lg shadow-lg ${
+        className={`relative z-10 mx-auto w-full max-w-[90vw] p-6 md:p-8 rounded-2xl shadow-lg ${
           theme === "light"
             ? "bg-[#143AA2] text-white"
             : "bg-[#2D3748] text-gray-300"
         }`}
       >
         <div className="text-left">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6">
+          <h2 className="text-2xl md:text-3xl lg:text-3xl font-black pr-[40%]">
             Empower growth with AI: matching compliance, cost-efficiency, and
             sustainable success.
           </h2>
 
           <div className="flex justify-end">
             <button
-              className={`px-8 py-2 md:px-12 md:py-3 rounded-lg font-semibold text-lg md:text-xl transition ${
+              className={`px-8 py-2 md:px-16 md:py-3 rounded-lg font-bold text-lg md:text-3xl transition mr-12 ${
                 theme === "light"
                   ? "bg-white text-[#143AA2] hover:bg-gray-100"
                   : "bg-[#FFD700] text-[#1F2937] hover:bg-[#FFA500]"
